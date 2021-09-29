@@ -2,8 +2,10 @@
 library(devtools)
 library(here)
 library(purrr)
+library(dplyr)
+library(janitor)
 
-# download NicheMapR from github repo
+# download NicheMapR from github repo 
 devtools::install_github('mrke/NicheMapR')
 library(NicheMapR)
 
@@ -23,6 +25,31 @@ envs <- read.csv(
 # download global climate model data-sets ----
 
 get.global.climate(folder = here("data", "raw"))
+
+# data cleaning ----------------------------------------------------------------
+
+phvi_means <- phvi %>%
+  janitor::clean_names() %>%
+  rename(
+    pct_wet_sa  = pct_wet_of_surface_area_acting_as_a_free_water_exchanger,
+    min_for_deg_c  = minimum_foraging_temperature_degrees_celcius,
+    max_temp_act_deg_c = maximum_temperature_at_which_activity_occurs_degrees_c,
+    min_b_deg_c = minimum_basking_temperature_to_the_nearest_degree_degrees_c,
+    min_temp_retr = minimum_temperature_it_will_leave_retreat_to_bask_the_nearest_degree_degrees_celcius,
+    min_crit_therm = 
+  ) %>%
+  group_by(site, sex) %>%
+  summarize(
+    wwg      = mean(wet_weight_grams), 
+    sad      = mean(solar_absorbtivity_dec),
+    pct_wet  = mean(pct_wet_sa),
+    min_for  = mean(min_for_deg_c),
+    max_for  = mean(max_temp_act_deg_c),
+    min_bask = mean(min_b_deg_c),
+    min_retr = mean(min_temp_retr),
+    min_crit_therm = mean(critical_thermal_minimum_degrees_c),
+    reps = n()
+  )
 
 # global implementation of the micro-climate model ----
 
