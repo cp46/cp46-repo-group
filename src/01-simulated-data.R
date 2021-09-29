@@ -7,13 +7,11 @@ library(purrr)
 devtools::install_github('mrke/NicheMapR')
 library(NicheMapR)
 
-# global climate model ----
+# download global climate model data-sets ----
 
-get.global.climate(
-  folder = here("data", "raw")
-  )
+get.global.climate(folder = here("data", "raw"))
 
-# global implementation of the microclimate model ----
+# global implementation of the micro-climate model ----
 
 longlat <- c(145.43, -17.13) 
 nyears <- 1
