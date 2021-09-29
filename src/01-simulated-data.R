@@ -7,6 +7,19 @@ library(purrr)
 devtools::install_github('mrke/NicheMapR')
 library(NicheMapR)
 
+# import the simulated data ----
+
+# biological parameters for Phaulacridium vittatum 
+# includes both female and male 
+phvi <- read.csv(
+  here("data", "raw", "phvi_params.csv")
+)
+
+# environmental parameters for each site
+envs <- read.csv(
+  here("data", "raw", "env_params.csv")
+)
+
 # download global climate model data-sets ----
 
 get.global.climate(folder = here("data", "raw"))
@@ -37,4 +50,6 @@ micro <- NicheMapR::micro_global(
   aspect = 0, 
   REFL = 0.15
   )
+
+
 
