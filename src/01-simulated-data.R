@@ -36,7 +36,11 @@ phvi_means <- phvi %>%
     max_temp_act_deg_c = maximum_temperature_at_which_activity_occurs_degrees_c,
     min_b_deg_c = minimum_basking_temperature_to_the_nearest_degree_degrees_c,
     min_temp_retr = minimum_temperature_it_will_leave_retreat_to_bask_the_nearest_degree_degrees_celcius,
-    min_crit_therm = 
+    min_crit_therm = critical_thermal_minimum_degrees_c,
+    max_crit_therm = critical_thermal_maximum_degrees_c,
+    temp_pref = preferreed_temperature_degrees_c, 
+    min_depth = min_depth_node, 
+    max_depth = max_depth_node
   ) %>%
   group_by(site, sex) %>%
   summarize(
@@ -47,7 +51,11 @@ phvi_means <- phvi %>%
     max_for  = mean(max_temp_act_deg_c),
     min_bask = mean(min_b_deg_c),
     min_retr = mean(min_temp_retr),
-    min_crit_therm = mean(critical_thermal_minimum_degrees_c),
+    min_ct = mean(min_crit_therm),
+    max_ct = mean(max_crit_therm),
+    t_pref = mean(temp_pref),
+    min_depth = mean(min_depth),
+    max_depth = mean(max_depth),
     reps = n()
   )
 
