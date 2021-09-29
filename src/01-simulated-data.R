@@ -13,9 +13,13 @@ get.global.climate(folder = here("data", "raw"))
 
 # global implementation of the micro-climate model ----
 
+# coordinates for tasmania 
 longlat <- c(145.43, -17.13) 
+
+# a single year
 nyears <- 1
 
+# get micro-climates!
 micro <- NicheMapR::micro_global(
   loc = longlat, 
   soiltype = 10, 
