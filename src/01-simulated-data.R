@@ -236,3 +236,15 @@ soil <- as.data.frame(micro$soil)
 # soil temperatures, maximum shade
 shadsoil <- as.data.frame(micro$shadsoil) 
 
+# append dates -----------------------------------------------------------------
+
+days <- rep(seq(1,12),24)
+days <- days[order(days)]
+dates <- days+metout$TIME/60/24-1 # dates for hourly output
+dates2 <- seq(1,12,1) # dates for daily output
+metout <- cbind(dates,metout)
+environ <- cbind(dates,environ)
+masbal <- cbind(dates,masbal)
+enbal <- cbind(dates,enbal)
+
+
