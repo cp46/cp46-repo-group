@@ -285,3 +285,13 @@ enbal <- cbind(dates,enbal)
   theme_bw()
 )
 
+# save to disk -----------------------------------------------------------------
+
+ggsave(
+  filename = here("output", "phvi_F_body-temp_time.png"),
+  plot = tb_date_phvi_f, 
+  units = "in", 
+  height = 5, 
+  width = 5, 
+  device = "png"
+)
