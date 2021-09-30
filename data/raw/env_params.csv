@@ -1,0 +1,7 @@
+﻿Site No.,Longitude,Latitude,Site name,Soil type,elevation (M),moisture,date visited,clear sky?,slope,aspect,reflectance ,minimum shade (%),maximum shade (%)
+1,146.28,-42.28,Butler's gorge (Tasmania),Silty / Clay,667,1,29-Jun-20,Yes,0,0,0.15,0,20
+2,147.14,-43.49,Cape Bruny Light House (Tasmania),Sandy / Clay,55,1,29-Jun-20,Yes,0,0,0.15,0,30
+3,141.7,-31.09,Fowlers Gap (New South Wales),Sandy,181,1,30-Jun-20,Yes,0,0,0.15,0,30
+4,149.56,-33.43,Bathurst Agricultural Station (New South Wales),Sandy/ Clay,713,1,30-Jun-20,Yes,0,0,0.15,0,10
+5,153.04,-26.39,Tewantin RSL Park (Queensland),Loan,6.4,1,01-Jul-20,Yes,0,0,0.15,0,10
+6,145.43,-17.13,Walkamin research station (Queensland),Silty / Clay,594,1,01-Jul-20,Yes,0,0,0.15,0,10
