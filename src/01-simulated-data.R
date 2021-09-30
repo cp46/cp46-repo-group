@@ -4,6 +4,7 @@ library(here)
 library(purrr)
 library(dplyr)
 library(janitor)
+library(ggplot2)
 
 # download NicheMapR from github repo 
 devtools::install_github('mrke/NicheMapR')
@@ -247,4 +248,40 @@ environ <- cbind(dates,environ)
 masbal <- cbind(dates,masbal)
 enbal <- cbind(dates,enbal)
 
+# graphs -----------------------------------------------------------------------
+
+(tb_date_phvi_f <- environ %>%
+  ggplot(aes(x = dates, y = TC)) + 
+  geom_line(aes(x = dates, y = TC)) +
+  
+  # TF max
+  geom_hline(
+    yintercept = T_F_max, 
+    linetype = "dashed", 
+    col = "red", 
+    alpha = 0.5
+    ) + 
+  geom_text(aes(x = 1, y = T_F_max, label = "TF (max)"), col = "red") + 
+  
+  # TF min
+  geom_hline(
+    yintercept = T_F_min, 
+    linetype = "dashed", 
+    col = "blue", 
+    alpha = 0.5
+  ) + 
+  geom_text(aes(x = 1, y = T_F_min, label = "TF (min)"), col = "blue") + 
+  
+  # TF pref
+  geom_hline(
+    yintercept = T_pref, 
+    linetype = "dashed", 
+    col = "orange", 
+    alpha = 0.5
+  ) + 
+  geom_text(aes(x = 1, y = T_pref, label = "TF (pref)"), col = "orange") + 
+  
+  labs(x = "month of year", y = "T_b and activity") + 
+  theme_bw()
+)
 
