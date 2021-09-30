@@ -86,5 +86,99 @@ micro <- NicheMapR::micro_global(
   REFL = 0.15
   )
 
+# set female ectotherm parameters ----------------------------------------------
+
+# wet weight of animal (g)
+Ww_g <- phvi_means %>%
+  filter(site == "1", sex == "F") %>%
+  pull(wwg)
+
+# % of surface area acting as a free-water exchanger
+pct_wet <- phvi_means %>%
+  filter(site == "1", sex == "F") %>%
+  pull(pct_wet)
+
+# minimum solar absorbtivity (dec %)
+alpha_min <- phvi_means %>%
+  filter(site == "1", sex == "F") %>%
+  pull(sad)
+
+# maximum solar absorbtivity (dec %)
+alpha_max <- phvi_means %>%
+  filter(site == "1", sex == "F") %>%
+  pull(sad)
+
+# cylindrical 
+shape <- 1
+
+# min Tb will leave retreat to bask
+T_RB_min <- phvi_means %>%
+  filter(site == "1", sex == "F") %>%
+  pull(min_retr)
+
+# min Tb minimum basking temperature
+T_B_min <- phvi_means %>%
+  filter(site == "1", sex == "F") %>%
+  pull(min_bask)
+
+# minimum foraging temperature 
+T_F_min <- phvi_means %>%
+  filter(site == "1", sex == "F") %>%
+  pull(min_for)
+
+# maximum Tb at which activity occurs
+T_F_max <- phvi_means %>%
+  filter(site == "1", sex == "F") %>%
+  pull(max_for)
+
+# preferred Tb 
+T_pref <- phvi_means %>%
+  filter(site == "1", sex == "F") %>%
+  pull(t_pref)
+
+# critical thermal minimum (affects choice of retreat) 
+CT_max <- phvi_means %>%
+  filter(site == "1", sex == "F") %>%
+  pull(max_ct)
+
+# critical thermal maximum (affects choice of retreat) 
+CT_min <- phvi_means %>%
+  filter(site == "1", sex == "F") %>%
+  pull(min_ct)
+
+# min depth (node, 1-10) allowed
+mindepth <- phvi_means %>%
+  filter(site == "1", sex == "F") %>%
+  pull(min_depth)
+
+# max depth (node, 1-10) allowed
+maxdepth <- phvi_means %>%
+  filter(site == "1", sex == "F") %>%
+  pull(max_depth)
+
+# shade seeking?
+shade_seek <- 0 
+
+# can it burrow?
+burrow <- 0 
+
+# can it climb to thermoregulate?
+climb <- 0 
+
+# nocturnal activity
+nocturn <- 0 
+
+# crepuscular activity
+crepus <- 0 
+
+# diurnal activity
+diurn <- 1
+
+# posture 
+postur <- 1
+
+# Percent shade increments
+delta_shade <- 1 
+
 
 
