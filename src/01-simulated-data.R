@@ -180,5 +180,27 @@ postur <- 1
 # Percent shade increments
 delta_shade <- 1 
 
+# run female ectotherm function ------------------------------------------------
 
-
+ecto_f <- NicheMapR::ectotherm(
+  Ww_g = Ww_g, 
+  alpha_max = alpha_max, 
+  alpha_min = alpha_min, 
+  pct_wet = pct_wet, 
+  T_F_max = T_F_max, 
+  T_F_min = T_F_min, 
+  T_B_min = T_B_min, 
+  T_RB_min = T_RB_min, 
+  CT_max = CT_max,
+  CT_min = CT_min, 
+  T_pref = T_pref, 
+  mindepth = mindepth, 
+  maxdepth = maxdepth, 
+  shade_seek = shade_seek, 
+  burrow = burrow, 
+  climb = climb, 
+  nocturn = nocturn, 
+  diurn = diurn, 
+  crepus = crepus, 
+  delta_shade = delta_shade, 
+  postur = postur) 
