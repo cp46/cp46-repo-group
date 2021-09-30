@@ -203,4 +203,8 @@ ecto_f <- NicheMapR::ectotherm(
   diurn = diurn, 
   crepus = crepus, 
   delta_shade = delta_shade, 
+  minshades = micro$minshade,
+  maxshades = micro$maxshade,
   postur = postur) 
+
+
