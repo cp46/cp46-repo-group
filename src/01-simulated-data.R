@@ -207,4 +207,32 @@ ecto_f <- NicheMapR::ectotherm(
   maxshades = micro$maxshade,
   postur = postur) 
 
+# output -----------------------------------------------------------------------
+
+# for the graph of Phaulacridium temperatures
+
+# behaviour, Tb and environment
+environ <- as.data.frame(ecto_f$environ)
+
+# heat balance outputs
+enbal <- as.data.frame(ecto_f$enbal) 
+
+# mass balance outputs
+masbal <- as.data.frame(ecto_f$masbal) 
+
+# above ground micro-climate
+metout <- as.data.frame(micro$metout) 
+
+# add solar radiation for activity window plots
+environ <- cbind(environ, metout$SOLR) 
+colnames(environ)[ncol(environ)] <- "Solar"
+
+# above ground microclimatic conditions, max shade
+shadmet <- as.data.frame(micro$shadmet) 
+
+# soil temperatures, minimum shade
+soil <- as.data.frame(micro$soil) 
+
+# soil temperatures, maximum shade
+shadsoil <- as.data.frame(micro$shadsoil) 
 
