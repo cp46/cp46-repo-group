@@ -25,7 +25,7 @@ envs <- read.csv(
 
 # download global climate model data-sets ----
 
-get.global.climate(folder = here("data", "raw"))
+NicheMapR::get.global.climate(folder = here("data", "raw"))
 
 # data cleaning ----------------------------------------------------------------
 
@@ -184,6 +184,8 @@ delta_shade <- 1
 # run female ectotherm function ------------------------------------------------
 
 ecto_f <- NicheMapR::ectotherm(
+  
+  # average trait values for a female
   Ww_g = Ww_g, 
   alpha_max = alpha_max, 
   alpha_min = alpha_min, 
@@ -204,6 +206,8 @@ ecto_f <- NicheMapR::ectotherm(
   diurn = diurn, 
   crepus = crepus, 
   delta_shade = delta_shade, 
+  
+  # simulated environmental parameters 
   minshades = micro$minshade,
   maxshades = micro$maxshade,
   postur = postur) 
