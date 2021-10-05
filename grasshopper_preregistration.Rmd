@@ -207,11 +207,11 @@ Ectotherm:
 
 The wet weight of the animal, the percentage of surface area acting as a free-water exchanger, solar absorbtivity, species shape, the temperature at which the specimen will leave retreat to bask, the specimen’s minimum and maximum foraging temperatures, the species thermal minimum and maximum, maximum temperature at which activity occurs, temperature preference, the depth the species burrow to, whether they are shade seaking, whether it can climb, if it’s nocturnally active, its crepuscular activity, whether it’s diurnally active.
 
-Ectotherm code will be used to compute a basic biophysical model of the organism. The microclimate model will set its external conditions. By changing the external conditions, and the information relating to the ectotherms, over multiple runs, one can see in which locations survival is possible, and make extrapolations about their range. 
+Ectotherm code will be used to compute a basic biophysical model of the organism. The microclimate model will set its external conditions. By changing the external conditions, and the information relating to the ectotherms, over multiple runs, one can see in which locations survival is possible, and make extrapolations about their range (see Figure 1). 
 
 The model can be checked for accuracy by comparing the data in the model to their current and known distribution, as well as past distributions. Should the model predict distributions accurately, then the information is available for future extrapolations.
 
-![Figure 1](output/phvi_F_body-temp_time.png)
+![Activity of Female Phaulacridium in Tasmania under zero shade. Inactivity from exceeding its maximum foraging temperature represents T_F Max, dropping below the minimum foraging temperature represents T_F Min.](output/phvi_F_body-temp_time.png)
 
 ## Transformations
 <!-- If you plan on transforming, centering, recoding the data, or will require a coding scheme for categorical variables, please describe that process. If any categorical predictors are included in a regression, indicate how those variables will be coded (e.g. dummy coding, summation coding, etc.) and what the reference category will be.
