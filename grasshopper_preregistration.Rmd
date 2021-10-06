@@ -45,7 +45,7 @@ Example: Though there is strong evidence to suggest that sugar affects taste pre
 
 Thermodynamic constraints limit how species grow, breed, and survive in a given environment based on their energy and water needs. Animals occupy specific thermodynamic niches, which can be used to model population abundances and distributions in changing environments [@kearneyNicheMapRPackageBiophysical2020]. @kearneyModellingSpeciesDistributions2008 used a trait-based approach to investigate the spatial range of the invasive cane toad *Bufo marinus* in Australia. Rather than relying on species occurrences observations, @kearneyModellingSpeciesDistributions2008 linked the physical traits with spatial data through biophysical models and were able to predict range expansion under a warming climate. @kearneyNicheMapRPackageBiophysical2020 developed 'NicheMapR', an R package which implements mechanistic niche modeling for heat, water, energy, and mass exchange between ectothermic organisms and its environment. While traditionally used for reptiles and amphibians, @kearneyNicheMapRPackageBiophysical2020 posited that this software could be applied to a broad range of ectotherms. 
 
-Here, we attempt to use NicheMapR to forecast distribution patterns for the grasshopper species *Phaulacridium vittatum* in response to climate change. Similar to the cane toad, *P. vittatum* is also an ectothermic pest that has become widespread in Australia and whose range will likely shift with changing temperatures [@yadavDetectionEnvironmentalMorphological2019]. We aim to replicate the methods of @kearneyModellingSpeciesDistributions2008, using updated methodology with the 'NicheMapR' R package. We will examine energy budgets and plasticity for *P. vittatum* by assessing ecological traits such as body size, solar absorbtivity, and sex.
+Here, we attempt to use NicheMapR to forecast distribution patterns for the grasshopper species *Phaulacridium vittatum* in response to climate change. Similar to the cane toad, *P. vittatum* is also an ectothermic pest that has become widespread in Australia and whose range will likely shift with changing temperatures [@yadavDetectionEnvironmentalMorphological2019]. We aim to replicate the methods of @kearneyModellingSpeciesDistributions2008, using updated methodology with the 'NicheMapR' R package. We will examine energy budgets and plasticity for *P. vittatum* by assessing ecological traits such as body size, solar absorptivity, and sex.
 
 ## Hypotheses
 <!-- List specific, concise, and testable hypotheses. Please state if the hypotheses are directional or non-directional. If directional, state the direction. A predicted effect is also appropriate here. If a specific interaction or moderation is important to your research, you can list that as a separate hypothesis.
@@ -163,9 +163,11 @@ Observational studies and meta-analyses will include only measured variables. As
 
 Example: The single outcome variable will be the perceived tastiness of the single brownie each participant will eat. We will measure this by asking participants ‘How much did you enjoy eating the brownie’ (on a scale of 1-7, 1 being 'not at all', 7 being 'a great deal') and 'How good did the brownie taste' (on a scale of 1-7, 1 being 'very bad', 7 being 'very good'). -->
 
+All methodology as described below was used for the pilot study, and will be repeated for the true study.
+
 We plan to use the previously published constants for temperature thresholds (°C) that *P. vittatum* survives and responds to. These values differ between males and females. Certain categorical variables like posture, burrowing depth, diurnal, nocturnal and crepuscular activity will be taken from the literature. For example, burrowing depth is measured on a scale of one to ten and because *P. vittatum* cannot burrow well, it will be given a value of one. CT_max (critical thermal maximum), CT_min (critical thermal minimum), diurnal activity and delta_shade were sourced from @kearneyNicheMapRPackageBiophysical2020, as it was not viable to take these measurements in the field.
 
-The wet weight (g), sex (M/F), and solar absorbtivity (%) of every captured grasshopper will be measured in the field. 
+The wet weight (g), sex (M/F), and solar absorptivity (%) of every captured grasshopper will be measured in the field. 
 
 The geographic coordinates, elevation, date, and soil type of every sampling site will be recorded. To keep sampling consistent, sites were selected based on certain criteria. For example, sites must be flat (so their aspect and slope will be zero), they must be completely unshaded for at least part of the day (minimum shade will be 0% because of bare ground at sites), and they will be sampled on a day with clear skies. 
 
@@ -205,7 +207,7 @@ Longitude and latitude, number of years to be calculated by the model, soil type
 
 2) Biophysical ecotherm model (i.e., ecological traits and environmental data)
 
-The wet weight of the animal, the percentage of surface area acting as a free-water exchanger, solar absorbtivity, species shape, the temperature at which the specimen will leave retreat to bask, the specimen’s minimum and maximum foraging temperatures, the species thermal minimum and maximum, maximum temperature at which activity occurs, temperature preference, the depth the species burrow to, whether they are shade seeking, whether it can climb, if it’s nocturnally active, its crepuscular activity, whether it’s diurnally active.
+The wet weight of the animal, the percentage of surface area acting as a free-water exchanger, solar absorptivity, species shape, the temperature at which the specimen will leave retreat to bask, the specimen’s minimum and maximum foraging temperatures, the species thermal minimum and maximum, maximum temperature at which activity occurs, temperature preference, the depth the species burrow to, whether they are shade seeking, whether it can climb, if it’s nocturnally active, its crepuscular activity, whether it’s diurnally active.
 
 Analytical workflow:
 

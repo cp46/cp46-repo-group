@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.21)  6 OCT 2021 16:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.21)  6 OCT 2021 16:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -695,7 +695,7 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 382.
 
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
-90.
+93.
 (c:/Users/Nicole/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -710,7 +710,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [6]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 429.
+(hyperref)                be the same. Added a new anchor on input line 432.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -725,7 +725,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: output/phvi_F_body-temp_time.png Graphic file (type png)
 <use output/phvi_F_body-temp_time.png>
 Package pdftex.def Info: output/phvi_F_body-temp_time.png  used on input line 4
-89.
+92.
 (pdftex.def)             Requested size: 361.33441pt x 361.33441pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -738,7 +738,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [8 <./output/phvi_F_body-temp_time.png>]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 548.
+(hyperref)                be the same. Added a new anchor on input line 551.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -751,7 +751,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [9]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 556.
+(hyperref)                be the same. Added a new anchor on input line 559.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -795,7 +795,7 @@ xmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/Nicole/AppData/Roaming/TinyT
 eX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/Nicole/AppData/Roaming/T
 inyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/Users/Nicole/AppData/Roa
 ming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb>
-Output written on grasshopper_preregistration.pdf (11 pages, 468121 bytes).
+Output written on grasshopper_preregistration.pdf (11 pages, 468227 bytes).
 PDF statistics:
  277 PDF objects out of 1000 (max. 8388607)
  240 compressed objects within 3 object streams
