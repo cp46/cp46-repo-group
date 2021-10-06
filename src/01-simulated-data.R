@@ -1,3 +1,10 @@
+#
+# This script is used to run a preliminary analysis for the "Preregistration for a replication study using trait-based data and NicheMapR to predict the spatial range of the wingless grasshopper *Phaulacridium vittatum*"
+#
+# Authors: Garland Xie, Alex Coverley, Michael Mensah, Claire Paillard, Nicole Lerminiaux
+# Date: October 6, 2021
+
+
 # libraries -----
 library(devtools)
 library(here)
