@@ -1,5 +1,5 @@
 ---
-title           : "Preregistration for the replication study of spatial range of the wingless grasshopper *Phaulacridium vittatum* using trait-based data and NicheMapR"
+title           : "Preregistration for a replication study using trait-based data and NicheMapR to predict the spatial range of the wingless grasshopper *Phaulacridium vittatum*"
 shorttitle      : "Preregistration Group Project"
 date            : "`r Sys.setlocale('LC_TIME', 'C'); format(Sys.time(), '%d\\\\. %B %Y')`"
 
