@@ -243,7 +243,7 @@ Beside the quality control checks performed for weight data, no checks will be p
 
 Example: If a subject does not complete any of the three indices of tastiness, that subject will not be included in the analysis. -->
 
-The calibration procedure employed to set up the weighing scale was erroneous and resulted in the recording of wrong wet weight values. Hence, the allometric model by [@bidauBreakingRuleMultiple2016] was used to generate wet weight values from the other morphometric parameters recorded. 
+If the calibration procedure employed to set up the weighing scale to measure wet weights is erroneous and results in the recording of wrong values, the mean indices of sexual size dimorphism (SSD= female weight/male weight) as described by [@bidauBreakingRuleMultiple2016] will be adopted to generate missing wet weight values.
 
 ## Exploratory analyses (optional)
 <!-- If you plan to explore your data set to look for unexpected differences or relationships, you may describe those tests here. An exploratory test is any test where a prediction is not made up front, or there are multiple possible tests that you are going to use. A statistically significant finding in an exploratory test is a great way to form a new confirmatory hypothesis, which could be registered at a later time.
